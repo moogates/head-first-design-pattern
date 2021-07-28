@@ -1,0 +1,19 @@
+package me.muyuwei.hfdp.builders;
+
+import me.muyuwei.hfdp.cars.CarType;
+import me.muyuwei.hfdp.components.Engine;
+import me.muyuwei.hfdp.components.GPSNavigator;
+import me.muyuwei.hfdp.components.Transmission;
+import me.muyuwei.hfdp.components.TripComputer;
+
+/**
+ * Builder interface defines all possible ways to configure a product.
+ */
+public interface Builder {
+    void setCarType(CarType type);
+    void setSeats(int seats);
+    void setEngine(Engine engine);
+    void setTransmission(Transmission transmission);
+    void setTripComputer(TripComputer tripComputer);
+    void setGPSNavigator(GPSNavigator gpsNavigator);
+}
